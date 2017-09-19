@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  productGUID: 78a0debb85b89074c86ab05185aab2aa
+  productGUID: 4d2e457fff268394c9847dc8fbe575ea
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
@@ -583,12 +583,11 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled:
-    UNet: 1
+  cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 6d42aee2-0e2b-4336-be10-d9ffa1f6d1b5
-  projectName: zombieSideScroller
+  cloudProjectId: 45cadd59-b901-4325-83b2-23523a4b51e9
+  projectName: zombieSideScroller (2)
   organizationId: anhducdang
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
