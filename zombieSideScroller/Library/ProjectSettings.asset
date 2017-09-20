@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  productGUID: f4565ab1dd91ea244b96c8bbb7d230f0
+  productGUID: 4d2e457fff268394c9847dc8fbe575ea
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
@@ -587,8 +587,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: de116663-5ffe-4552-b936-12c75e154dea
-  projectName: zombieSideScroller (1)
+  cloudProjectId: 45cadd59-b901-4325-83b2-23523a4b51e9
+  projectName: zombieSideScroller (2)
   organizationId: anhducdang
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
