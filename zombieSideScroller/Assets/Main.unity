@@ -277,6 +277,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 807680443}
+  - component: {fileID: 807680444}
   m_Layer: 0
   m_Name: gunMuzzle
   m_TagString: Untagged
@@ -297,6 +298,19 @@ Transform:
   m_Father: {fileID: 1049147285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807680444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807680442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5837379a3b242a408bbdb85225df64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenBullet: 0.15
+  projectile: {fileID: 1967549656852742, guid: dd37f5ed557e1cd40a2e820f3b29f036, type: 2}
 --- !u!4 &1049147285 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 666ebf5ee2ac05c4085801e36f2ef233, type: 3}
@@ -496,6 +510,11 @@ Prefab:
     - target: {fileID: 4259441789424320, guid: dd37f5ed557e1cd40a2e820f3b29f036, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578802239078872, guid: dd37f5ed557e1cd40a2e820f3b29f036,
+        type: 2}
+      propertyPath: aliveTime
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd37f5ed557e1cd40a2e820f3b29f036, type: 2}

@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 198653251338417864}
   - component: {fileID: 199798022825926532}
   - component: {fileID: 108993775732267388}
+  - component: {fileID: 114040803817480580}
+  - component: {fileID: 114578802239078872}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -93,6 +95,31 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114040803817480580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1967549656852742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07692fe5021ab8444a3aa487f992ce50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  damage: 5
+--- !u!114 &114578802239078872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1967549656852742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1934b409dd2a28b41b6d1864cbc45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliveTime: 0.1
 --- !u!120 &120905666758883160
 LineRenderer:
   m_ObjectHideFlags: 1
