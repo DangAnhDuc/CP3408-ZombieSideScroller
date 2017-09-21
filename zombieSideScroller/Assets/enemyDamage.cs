@@ -55,6 +55,7 @@ public class enemyDamage : MonoBehaviour {
         pushDirection *= pushBackForce;
 
         Rigidbody pushedRB = pushedObject.GetComponent<Rigidbody>();
+        pushedRB.velocity = Vector3.zero;
         pushedRB.AddForce(pushDirection, ForceMode.Impulse);
     }
 
