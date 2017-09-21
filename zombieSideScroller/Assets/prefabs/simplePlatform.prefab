@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4166620135828760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: simplePlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33434212688472684}
   - component: {fileID: 23838015269417520}
   - component: {fileID: 65205698729156460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

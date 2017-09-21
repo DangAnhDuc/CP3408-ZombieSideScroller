@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 8
+  walkSpeed: 1.7
 --- !u!1 &1350504421
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: 4c938a12ef3368543a0f89cb29dbebcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: 4c938a12ef3368543a0f89cb29dbebcd, type: 3}
       propertyPath: m_LocalPosition.z
