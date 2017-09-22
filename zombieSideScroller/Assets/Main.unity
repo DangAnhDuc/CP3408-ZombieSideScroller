@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -411,6 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807680443}
   - component: {fileID: 807680444}
+  - component: {fileID: 807680445}
   m_Layer: 0
   m_Name: gunMuzzle
   m_TagString: Untagged
@@ -444,6 +445,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenBullet: 0.15
   projectile: {fileID: 1967549656852742, guid: dd37f5ed557e1cd40a2e820f3b29f036, type: 2}
+--- !u!114 &807680445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807680442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6dda873d6a9be41924c2ac65776d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  knockBack: 10
+  knockBackRadius: 0.5
+  meleeRate: 0.5
 --- !u!1001 &964948675
 Prefab:
   m_ObjectHideFlags: 0
