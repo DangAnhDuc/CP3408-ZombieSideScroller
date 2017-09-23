@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4602756339389846}
   - component: {fileID: 198094343074438134}
   - component: {fileID: 199961184368295204}
+  - component: {fileID: 114580204777547252}
   m_Layer: 0
   m_Name: smokePS
   m_TagString: Untagged
@@ -120,6 +121,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114580204777547252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1328818389601164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1934b409dd2a28b41b6d1864cbc45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliveTime: 2
 --- !u!114 &114844836536591864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f6e5c588041c243b242c3c8687cc03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 5
   speed: 5
 --- !u!114 &114867907597953770
 MonoBehaviour:
