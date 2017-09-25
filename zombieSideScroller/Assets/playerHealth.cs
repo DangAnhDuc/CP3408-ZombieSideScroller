@@ -16,11 +16,13 @@ public class playerHealth : MonoBehaviour
 	Color flashColor = new Color(255f,255f,255f,1f);
 	float flashSpeed = 5f;
 	bool damaged = false;
+    public Text endGameText;
+    public restartGame theGameController;
 
 	AudioSource playerAS;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         currentHealth = fullHealth;
 		playerHealthSlider.maxValue = fullHealth;
@@ -68,5 +70,8 @@ public class playerHealth : MonoBehaviour
         Instantiate(playerDeathFX, transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
 		damageScreen.color = flashColor;
         Destroy(gameObject);
+        Animator endGameAnim = endGameText.GetComponent<Animator>();
+        endGameAnim.SetTrigger("endGame");
+        theGameController.restartTheGame();
     }
 }

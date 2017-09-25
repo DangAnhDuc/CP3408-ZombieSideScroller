@@ -5,6 +5,7 @@ using UnityEngine;
 public class zombieController : MonoBehaviour {
 
 	public GameObject flipModel;
+    public GameObject ragdollDead;
 
 	//audio options
 	public AudioClip[] idleSounds;
@@ -110,5 +111,42 @@ public class zombieController : MonoBehaviour {
 		flipModel.transform.localScale = theScale;
 	}
 
+    public void ragdollDeath() {
+        GameObject ragDoll = Instantiate(ragdollDead, transform.root.transform.position, Quaternion.identity) as GameObject;
 
+        Transform ragdolMaster = ragDoll.transform.Find("master");
+        Transform zombieMaster = transform.root.Find("master");
+
+        bool wasFacingRight = true;
+        if(!facingRight) {
+            wasFacingRight = false;
+            Flip();
+        }
+
+        Transform[] ragdollJoints = ragdolMaster.GetComponentsInChildren<Transform>();
+        Transform[] currentJoints = zombieMaster.GetComponentsInChildren<Transform>();
+
+        for (int i = 0; i<ragdollJoints.Length; i++) {
+            for (int q = 0; q<currentJoints.Length; q++) {
+                if (currentJoints[q].name.CompareTo(ragdollJoints[i].name) == 0) {
+                    ragdollJoints[i].position = currentJoints[q].position;
+                    ragdollJoints[i].rotation = currentJoints[q].rotation;
+                    break;
+                }
+            }
+        }
+
+        if(wasFacingRight) {
+            Vector3 rotVector = new Vector3(0, 0, 0);
+            ragDoll.transform.rotation = Quaternion.Euler(rotVector);
+        } else {
+            Vector3 rotVector = new Vector3(0, 90, 0);
+            ragDoll.transform.rotation = Quaternion.Euler(rotVector);
+        }
+
+        Transform zombieMesh = transform.root.transform.Find("zombieSoldier");
+        Transform ragdollMesh = ragDoll.transform.Find("zombieSoldier");
+
+        ragdollMesh.GetComponent<Renderer>().material = zombieMesh.GetComponent<Renderer>().material;
+    }
 }

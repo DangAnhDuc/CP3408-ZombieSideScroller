@@ -28,7 +28,7 @@ public class enemyHealth : MonoBehaviour {
 	AudioSource enemyAS;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		currentHealth = enemyMaxHealth;
 		enemyHealthIndicator.maxValue = enemyMaxHealth;
 		enemyHealthIndicator.value = currentHealth;
@@ -73,8 +73,13 @@ public class enemyHealth : MonoBehaviour {
 	}
 
 	void makeDead(){
-		//turn off movement
-		//create ragdoll
+        //turn off movement
+        //create ragdoll
+        zombieController aZombie = GetComponentInChildren<zombieController>();
+        if(aZombie != null) {
+            aZombie.ragdollDeath();
+        }
+        
 		AudioSource.PlayClipAtPoint(deathSound, transform.position, 0.15f);
 
 		Destroy (gameObject.transform.root.gameObject);

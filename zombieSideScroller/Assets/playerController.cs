@@ -51,6 +51,8 @@ public class playerController : MonoBehaviour
 
         myAnim.SetBool("grounded", grounded);
 
+        // jumping
+        myAnim.SetFloat("verticalSpeed", myRB.velocity.y);
 
         float move = Input.GetAxisRaw("Horizontal");
         myAnim.SetFloat("speed", Mathf.Abs(move));

@@ -2173,6 +2173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipModel: {fileID: 1296073432632192}
+  ragdollDead: {fileID: 1239124776038354, guid: eb4835259e194a34facef4044100287b,
+    type: 2}
   idleSounds:
   - {fileID: 8300000, guid: 3b392f84b2b9fc949bce5c7e5e0a8cdc, type: 3}
   - {fileID: 8300000, guid: 79dcf3654a7e29e4cbd9d0d822d282b5, type: 3}
